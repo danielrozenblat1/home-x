@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Heebo';
+    src: url('./Heebo-VariableFont_wght.ttf') format('truetype');
+    font-weight:bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'HeeboR';
+    src: url('./Heebo-VariableFont_wght.ttf') format('truetype');
+    font-weight:light;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Rubik';
+    src: url('./Rubik-VariableFont_wght.ttf') format('truetype');
+    font-weight:bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'RubikR';
+    src: url('./Rubik-VariableFont_wght.ttf') format('truetype');
+    font-weight:light;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Assistant';
+    src: url('./Assistant-VariableFont_wght.ttf') format('truetype');
+    font-weight:bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'AssistantR';
+    src: url('./Assistant-VariableFont_wght.ttf') format('truetype');
+    font-weight:lighter;
+    font-style: normal;
+  }

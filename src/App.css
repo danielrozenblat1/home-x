@@ -1,0 +1,31 @@
+@import url("./fonts/fonts.css");
+
+
+  body {
+    background:rgb(12, 5, 0);
+    /* background: linear-gradient(180deg, rgba(15,15,15,1) 0%, rgba(57,18,0,1) 20%, rgba(19,7,0,0.9663515064228817) 40%, rgba(119,39,0,1) 60%, rgba(114,52,0,1) 80%, rgba(114,52,0,1) 80%, rgba(15,15,15,1) 100%, rgba(15,15,15,1) 100%); */
+    /* background: linear-gradient(358deg, #ff7200, #ffae27, #e87200, #cc4d09, #ff6600);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 19s ease infinite;
+    -moz-animation: AnimationName 19s ease infinite;
+    animation: AnimationName 19s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+} */
+
+  }

@@ -1,0 +1,7 @@
+.card{
+    display: flex;
+    width:30vw;
+    height:30vw;
+    background: linear-gradient(180deg, rgba(255,255,255,0.7702730750503326) 0%, rgba(255,111,0,0.5910013663668592) 50%, rgba(255,56,0,0.6526260162268032) 100%);
+    
+}
