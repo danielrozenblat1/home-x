@@ -93,11 +93,11 @@ export default function CustomizedTimeline() {
           <TimelineConnector   sx={{ bgcolor: 'white' }}/>
         </TimelineSeparator>
         <TimelineContent sx={{ py: '60px', px: 2 }}>
-          <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.2rem" color="white" id="item1">
-          שיחת ייעוץ ראשונית 
+          <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.2rem" color="white" id="item1" textAlign="right" >
+          שיחת ייעוץ + אפיון 
           </Typography>
-          <Typography fontFamily="RubikR"  direction="rtl" fontSize="1rem" color="white" id="item1" marginRight="auto">
-          הכרת הלקוח, הסברה ללקוח אילו עסקאות הוא יכול לבצע על בסיס הנתונים שהוא מציג
+          <Typography fontFamily="RubikR"  dir="rtl" fontSize="1rem" color="white" id="item1" marginRight="auto" textAlign="right" >
+           הכרת הלקוח, הסברה ללקוח אילו עסקאות הוא יכול לבצע על בסיס הנתונים שהוא מציג ואפיון העסקה יחד איתו
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -118,11 +118,11 @@ export default function CustomizedTimeline() {
           <TimelineConnector sx={{ bgcolor: 'white' }} />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '60px', px: 2 }}>
-          <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.2rem" color="white" id="item2">
+          <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.2rem" color="white" id="item2" textAlign="right" >
           בניית תמהיל מתאים
           </Typography>
-          <Typography fontFamily="RubikR"  direction="rtl" fontSize="1rem" color="white" id="item2"  marginLeft="auto" >
-     נסייר בחנות למשך כמה ימים כדי לחמם את החנות ולצבור וותק במשתמש
+          <Typography fontFamily="RubikR"  dir="rtl" fontSize="1rem" color="white" id="item2"  marginLeft="auto" textAlign="right"  >
+          נגדיר את מסלולי הריביות, לוחות הסילוקין ומספר שנות כל מסלול, תוך התחשבות בתרחישים עתידיים כמו שינוי מצב פיננסי, פירעונות מוקדמים ועוד...
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -143,11 +143,11 @@ export default function CustomizedTimeline() {
           <TimelineConnector sx={{ bgcolor: 'white' }} fontFamily="Rubik" />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '60px', px: 2 }}>
-          <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.2rem" color="white" id="item3">
-         פגישת ייעול
+          <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.2rem" color="white" id="item3" textAlign="right" >
+         משא ומתן מול הבנקים
           </Typography>
-          <Typography fontFamily="RubikR" direction="rtl" fontSize="1rem" color="white" id="item3" >
-      לאחר חודש ניפגש בזום ונבדוק מה עבד לך ומה פחות כדי להתייעל לחודש הבא
+          <Typography fontFamily="RubikR" dir="rtl" fontSize="1rem" color="white" id="item3" textAlign="right" >
+          לאחר שכבר חסכנו הרבה מאוד כסף בזכות בנייה נכונה של תמהיל , אנחנו ב-Home-X עובדים באופן שוטף מול בנקאיים בכירים בכל הבנקים להשיג עבורכם את הריביות הטובות ביותר ! 
           </Typography>
         </TimelineContent>
       </TimelineItem>
