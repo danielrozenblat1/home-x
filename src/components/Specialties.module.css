@@ -1,19 +1,20 @@
 .shape-container {
     position: relative;
-    width: 30vw;
-    height: 25vw;
+    width: 35vw;
+    height: 28vw;
     overflow: hidden;
-    
+    border-radius: 40px;
+  
   }
   
   /* Rectangle Style */
   .rectangle {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
-    border-radius: 40px;
-    font-size: 1.5rem;
+ 
+
     display: flex;
    
     flex-direction: column;
@@ -26,11 +27,11 @@
     position: absolute;
     width: 10vw;
     height: 10vw;
-    background: #0f0f0f;
+    background: rgb(12, 5, 0);
     border-radius: 50%;
-    top: 3%;
+    top: 0;
     left: 50%;
- margin-bottom: 5%;
+ margin-bottom: 100px;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
@@ -44,7 +45,7 @@
    
     flex-direction: column;
     align-items: center;
-    margin-top:20%; /* Add margin-top */
+    margin-top:40%; /* Add margin-top */
   }
   
   /* Text Style inside the Circle */
@@ -58,7 +59,8 @@
   .title {
     font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
     font-size: 2.2rem;
-margin-top:10%;
+position: absolute;
+top:15%;
     color: #000000;
   }
   
@@ -69,24 +71,27 @@ margin-top:10%;
     font-size: 1.2rem;
     color: #000000;
     width: 95%;
+  
+  position: absolute; 
     text-align: center;
-    margin:0 auto;
+    top:30%;
+
   }
 
-  @media only screen and (max-width: 380px) {
+  @media only screen and (max-width: 340px) {
 
 
     .shape-container {
         position: relative;
         width:90vw;
-        height: 70vw;
+        height: 100vw;
         overflow: hidden;
         margin:5% auto;
       }
       
       /* Rectangle Style */
       .rectangle {
-        position: absolute;
+        position: relative;
         width: 100%;
         height: 100%;
         background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
@@ -104,7 +109,91 @@ margin-top:10%;
         position: absolute;
         width: 30vw;
         height: 30vw;
-        background: #0f0f0f;
+        background: rgb(12, 5, 0);
+        border-radius: 50%;
+        top: 0;
+        left: 50%;
+     margin-bottom: 5%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF; /* Text color inside the circle */
+      
+      }
+      .content {
+        display: flex;
+        width: 100%;
+       
+        flex-direction: column;
+        align-items: center;
+        margin-top:45%; /* Add margin-top */
+      }
+      
+      /* Text Style inside the Circle */
+      .number {
+        font-family: "Rubik";
+        font-size: 3rem;
+        margin-top: 25%;
+      }
+      
+      /* Title Style */
+      .title {
+        font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
+        font-size: 1.2rem;
+    position:absolute;
+        color: #000000;
+        top:15%;
+      }
+      
+      /* Description Style */
+      .description {
+           direction: rtl;
+        font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
+        font-size:0.75rem;
+        color: #000000;
+        width: 95%;
+        text-align: center;
+        margin:0 auto;
+        position: absolute;
+        top:28%;
+      }
+
+
+
+  }
+  @media only screen and (min-width: 340px) and (max-width: 390px) {
+
+
+    .shape-container {
+        position: relative;
+        width:80vw;
+        height: 95vw;
+        overflow: hidden;
+        margin:5% auto;
+      }
+      
+      /* Rectangle Style */
+      .rectangle {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
+        border-radius: 40px;
+        font-size: 1.5rem;
+        display: flex;
+       
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      /* Ellipse (Circle) Style */
+      .circle {
+        position: absolute;
+        width: 30vw;
+        height: 30vw;
+        background: rgb(12, 5, 0);
         border-radius: 50%;
         top: 0;
         left: 50%;
@@ -136,8 +225,94 @@ margin-top:10%;
       .title {
         font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
         font-size: 1.5rem;
-    
+    position:absolute;
         color: #000000;
+        top:15%;
+      }
+      
+      /* Description Style */
+      .description {
+           direction: rtl;
+        font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
+        font-size:0.80rem;
+        color: #000000;
+        width: 90%;
+        text-align: center;
+        margin:0 auto;
+        position: absolute;
+        top:27%;
+      }
+
+
+
+  }
+  
+  @media only screen and (min-width: 380px) and (max-width: 420px) {
+
+
+    .shape-container {
+        position: relative;
+        width:80vw;
+        height: 95vw;
+        overflow: hidden;
+        margin:5% auto;
+      }
+      
+      /* Rectangle Style */
+      .rectangle {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
+        border-radius: 40px;
+        font-size: 1.5rem;
+        display: flex;
+       
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      /* Ellipse (Circle) Style */
+      .circle {
+        position: absolute;
+        width: 30vw;
+        height: 30vw;
+        background: rgb(12, 5, 0);
+        border-radius: 50%;
+        top: 0;
+        left: 50%;
+     margin-bottom: 5%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF; /* Text color inside the circle */
+      
+      }
+      .content {
+        display: flex;
+        width: 100%;
+       
+        flex-direction: column;
+        align-items: center;
+        margin-top:45%; /* Add margin-top */
+      }
+      
+      /* Text Style inside the Circle */
+      .number {
+        font-family: "Rubik";
+        font-size: 3rem;
+        margin-top: 25%;
+      }
+      
+      /* Title Style */
+      .title {
+        font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
+        font-size: 1.5rem;
+    position:absolute;
+        color: #000000;
+        top:15%;
       }
       
       /* Description Style */
@@ -146,270 +321,31 @@ margin-top:10%;
         font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
         font-size:0.85rem;
         color: #000000;
-        width: 95%;
-        text-align: center;
-        margin:0 auto;
-        gap: 0.5rem;
-      }
-
-
-
-  }
-  @media only screen and (min-width: 370px) and (max-width: 400px) {
-
-
-    .shape-container {
-        position: relative;
-        width:85vw;
-        height: 70vw;
-        overflow: hidden;
-        margin:5% auto;
-      }
-      
-      /* Rectangle Style */
-      .rectangle {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
-        border-radius: 40px;
-        font-size: 1.5rem;
-        display: flex;
-       
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      /* Ellipse (Circle) Style */
-      .circle {
-        position: absolute;
-        width: 30vw;
-        height: 30vw;
-        background: #0f0f0f;
-        border-radius: 50%;
-        top: 0;
-        left: 50%;
-     margin-bottom: 5%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF; /* Text color inside the circle */
-      
-      }
-      .content {
-        display: flex;
-        width: 100%;
-   
-        flex-direction: column;
-        align-items: center;
-        margin-top:45%; /* Add margin-top */
-      }
-      
-      /* Text Style inside the Circle */
-      .number {
-        font-family: "Rubik";
-        font-size: 3rem;
-        margin-top: 25%;
-      }
-      
-      /* Title Style */
-      .title {
-        font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
-        font-size: 1.5rem;
-    margin-top:10%;
-        color: #000000;
-      }
-      
-      /* Description Style */
-      .description {
-           direction: rtl;
-        font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
-        font-size:0.9rem;
-        color: #000000;
         width: 90%;
         text-align: center;
         margin:0 auto;
-        gap: 0.5rem;
+        position: absolute;
+        top:27%;
       }
+
+
 
   }
-  @media only screen and (min-width: 400px) and (max-width: 450px) {
-
-
-    .shape-container {
-        position: relative;
-        width:85vw;
-        height: 70vw;
-        overflow: hidden;
-        margin:5% auto;
-      }
-      
-      /* Rectangle Style */
-      .rectangle {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
-        border-radius: 40px;
-        font-size: 1.5rem;
-        display: flex;
-       
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      /* Ellipse (Circle) Style */
-      .circle {
-        position: absolute;
-        width: 30vw;
-        height: 30vw;
-        background: #0f0f0f;
-        border-radius: 50%;
-        top: 0;
-        left: 50%;
-     margin-bottom: 5%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF; /* Text color inside the circle */
-      
-      }
-      .content {
-        display: flex;
-        width: 100%;
-   
-        flex-direction: column;
-        align-items: center;
-        margin-top:45%; /* Add margin-top */
-      }
-      
-      /* Text Style inside the Circle */
-      .number {
-        font-family: "Rubik";
-        font-size: 3rem;
-        margin-top: 25%;
-      }
-      
-      /* Title Style */
-      .title {
-        font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
-        font-size: 1.7rem;
-    margin-top:10%;
-        color: #000000;
-      }
-      
-      /* Description Style */
-      .description {
-           direction: rtl;
-        font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
-        font-size:1rem;
-        color: #000000;
-        width: 90%;
-        text-align: center;
-        margin:0 auto;
-        gap: 0.5rem;
-      }
-
-  }
-
-  @media only screen and (min-width: 450px) and (max-width: 500px) {
-
-
-    .shape-container {
-        position: relative;
-        width:85vw;
-        height: 70vw;
-        overflow: hidden;
-        margin:5% auto;
-      }
-      
-      /* Rectangle Style */
-      .rectangle {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
-        border-radius: 40px;
-        font-size: 1.5rem;
-        display: flex;
-       
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      /* Ellipse (Circle) Style */
-      .circle {
-        position: absolute;
-        width: 30vw;
-        height: 30vw;
-        background: #0f0f0f;
-        border-radius: 50%;
-        top: 0;
-        left: 50%;
-     margin-bottom: 5%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF; /* Text color inside the circle */
-      
-      }
-      .content {
-        display: flex;
-        width: 100%;
-   
-        flex-direction: column;
-        align-items: center;
-        margin-top:45%; /* Add margin-top */
-      }
-      
-      /* Text Style inside the Circle */
-      .number {
-        font-family: "Rubik";
-        font-size: 3rem;
-        margin-top: 25%;
-      }
-      
-      /* Title Style */
-      .title {
-        font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
-        font-size: 1.9rem;
-    margin-top:10%;
-        color: #000000;
-      }
-      
-      /* Description Style */
-      .description {
-           direction: rtl;
-        font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
-        font-size:1.1rem;
-        color: #000000;
-        width: 90%;
-        text-align: center;
-        margin:0 auto;
-        gap: 0.5rem;
-      }
-
-  }
-  @media only screen and (min-width: 500px) and (max-width: 550px) {
+  
+  @media only screen and (min-width: 420px) and (max-width: 480px) {
 
 
     .shape-container {
         position: relative;
         width:80vw;
-        height: 65vw;
+        height: 95vw;
         overflow: hidden;
         margin:5% auto;
       }
       
       /* Rectangle Style */
       .rectangle {
-        position: absolute;
+        position: relative;
         width: 100%;
         height: 100%;
         background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
@@ -427,7 +363,7 @@ margin-top:10%;
         position: absolute;
         width: 30vw;
         height: 30vw;
-        background: #0f0f0f;
+        background: rgb(12, 5, 0);
         border-radius: 50%;
         top: 0;
         left: 50%;
@@ -442,7 +378,7 @@ margin-top:10%;
       .content {
         display: flex;
         width: 100%;
-   
+       
         flex-direction: column;
         align-items: center;
         margin-top:45%; /* Add margin-top */
@@ -458,38 +394,41 @@ margin-top:10%;
       /* Title Style */
       .title {
         font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
-        font-size: 1.9rem;
-    margin-top:10%;
+        font-size: 1.5rem;
+    position:absolute;
         color: #000000;
+        top:15%;
       }
       
       /* Description Style */
       .description {
            direction: rtl;
         font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
-        font-size:1.1rem;
+        font-size:0.95rem;
         color: #000000;
         width: 90%;
         text-align: center;
         margin:0 auto;
-        gap: 0.5rem;
+        position: absolute;
+        top:27%;
       }
 
   }
-  @media only screen and (min-width: 550px) and (max-width: 600px) {
+
+  @media only screen and (min-width: 480px) and (max-width: 520px) {
 
 
     .shape-container {
         position: relative;
         width:80vw;
-        height: 60vw;
+        height: 85vw;
         overflow: hidden;
         margin:5% auto;
       }
       
       /* Rectangle Style */
       .rectangle {
-        position: absolute;
+        position: relative;
         width: 100%;
         height: 100%;
         background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
@@ -507,7 +446,7 @@ margin-top:10%;
         position: absolute;
         width: 30vw;
         height: 30vw;
-        background: #0f0f0f;
+        background: rgb(12, 5, 0);
         border-radius: 50%;
         top: 0;
         left: 50%;
@@ -522,7 +461,7 @@ margin-top:10%;
       .content {
         display: flex;
         width: 100%;
-   
+       
         flex-direction: column;
         align-items: center;
         margin-top:45%; /* Add margin-top */
@@ -538,744 +477,1158 @@ margin-top:10%;
       /* Title Style */
       .title {
         font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
-        font-size: 1.9rem;
-    margin-top:10%;
+        font-size: 1.5rem;
+    position:absolute;
         color: #000000;
+        top:15%;
       }
       
       /* Description Style */
       .description {
            direction: rtl;
         font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
-        font-size:1.1rem;
+        font-size:0.95rem;
         color: #000000;
         width: 90%;
         text-align: center;
         margin:0 auto;
-        gap: 0.5rem;
+        position: absolute;
+        top:27%;
       }
 
   }
-  @media only screen and (min-width: 600px) and (max-width: 650px) {
+  @media only screen and (min-width: 520px) and (max-width: 570px) {
 
 
     .shape-container {
-        position: relative;
-        width:75vw;
-        height: 55vw;
-        overflow: hidden;
-        margin:5% auto;
-      }
-      
-      /* Rectangle Style */
-      .rectangle {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
-        border-radius: 40px;
-        font-size: 1.5rem;
-        display: flex;
-       
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      /* Ellipse (Circle) Style */
-      .circle {
-        position: absolute;
-        width: 30vw;
-        height: 30vw;
-        background: #0f0f0f;
-        border-radius: 50%;
-        top: 0;
-        left: 50%;
-     margin-bottom: 5%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF; /* Text color inside the circle */
-      
-      }
-      .content {
-        display: flex;
-        width: 100%;
-   
-        flex-direction: column;
-        align-items: center;
-        margin-top:45%; /* Add margin-top */
-      }
-      
-      /* Text Style inside the Circle */
-      .number {
-        font-family: "Rubik";
-        font-size: 3rem;
-        margin-top: 25%;
-      }
-      
-      /* Title Style */
-      .title {
-        font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
-        font-size: 1.9rem;
-    margin-top:10%;
-        color: #000000;
-      }
-      
-      /* Description Style */
-      .description {
-           direction: rtl;
-        font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
-        font-size:1.1rem;
-        color: #000000;
-        width: 90%;
-        text-align: center;
-        margin:0 auto;
-        gap: 0.5rem;
-      }
-
+      position: relative;
+      width:75vw;
+      height: 85vw;
+      overflow: hidden;
+      margin:5% auto;
+    }
+    
+    /* Rectangle Style */
+    .rectangle {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
+      border-radius: 40px;
+      font-size: 1.5rem;
+      display: flex;
+     
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Ellipse (Circle) Style */
+    .circle {
+      position: absolute;
+      width: 30vw;
+      height: 30vw;
+      background: rgb(12, 5, 0);
+      border-radius: 50%;
+      top: 0;
+      left: 50%;
+   margin-bottom: 5%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF; /* Text color inside the circle */
+    
+    }
+    .content {
+      display: flex;
+      width: 100%;
+     
+      flex-direction: column;
+      align-items: center;
+      margin-top:45%; /* Add margin-top */
+    }
+    
+    /* Text Style inside the Circle */
+    .number {
+      font-family: "Rubik";
+      font-size: 3rem;
+      margin-top: 25%;
+    }
+    
+    /* Title Style */
+    .title {
+      font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
+      font-size: 1.5rem;
+  position:absolute;
+      color: #000000;
+      top:15%;
+    }
+    
+    /* Description Style */
+    .description {
+         direction: rtl;
+      font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
+      font-size:1.05rem;
+      color: #000000;
+      width: 90%;
+      text-align: center;
+      margin:0 auto;
+      position: absolute;
+      top:27%;
+    }
   }
-  @media only screen and (min-width: 650px) and (max-width: 700px) {
+  @media only screen and (min-width: 570px) and (max-width: 620px) {
 
 
     .shape-container {
-        position: relative;
-        width:70vw;
-        height: 50vw;
-        overflow: hidden;
-        margin:5% auto;
-      }
-      
-      /* Rectangle Style */
-      .rectangle {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
-        border-radius: 40px;
-        font-size: 1.5rem;
-        display: flex;
-       
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      /* Ellipse (Circle) Style */
-      .circle {
-        position: absolute;
-        width: 25vw;
-        height: 25vw;
-        background: #0f0f0f;
-        border-radius: 50%;
-        top: 0;
-        left: 50%;
-     margin-bottom: 5%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF; /* Text color inside the circle */
-      
-      }
-      .content {
-        display: flex;
-        width: 100%;
-   
-        flex-direction: column;
-        align-items: center;
-        margin-top:45%; /* Add margin-top */
-      }
-      
-      /* Text Style inside the Circle */
-      .number {
-        font-family: "Rubik";
-        font-size: 3rem;
-        margin-top: 25%;
-      }
-      
-      /* Title Style */
-      .title {
-        font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
-        font-size: 1.9rem;
-    margin-top:10%;
-        color: #000000;
-      }
-      
-      /* Description Style */
-      .description {
-           direction: rtl;
-        font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
-        font-size:1.1rem;
-        color: #000000;
-        width: 90%;
-        text-align: center;
-        margin:0 auto;
-        gap: 0.5rem;
-      }
+      position: relative;
+      width:75vw;
+      height: 80vw;
+      overflow: hidden;
+      margin:5% auto;
+    }
+    
+    /* Rectangle Style */
+    .rectangle {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
+      border-radius: 40px;
+      font-size: 1.5rem;
+      display: flex;
+     
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Ellipse (Circle) Style */
+    .circle {
+      position: absolute;
+      width: 30vw;
+      height: 30vw;
+      background: rgb(12, 5, 0);
+      border-radius: 50%;
+      top: 0;
+      left: 50%;
+   margin-bottom: 5%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF; /* Text color inside the circle */
+    
+    }
+    .content {
+      display: flex;
+      width: 100%;
+     
+      flex-direction: column;
+      align-items: center;
+      margin-top:45%; /* Add margin-top */
+    }
+    
+    /* Text Style inside the Circle */
+    .number {
+      font-family: "Rubik";
+      font-size: 3rem;
+      margin-top: 25%;
+    }
+    
+    /* Title Style */
+    .title {
+      font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
+      font-size: 1.9rem;
+  position:absolute;
+      color: #000000;
+      top:16%;
+    }
+    
+    /* Description Style */
+    .description {
+         direction: rtl;
+      font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
+      font-size:1.1rem;
+      color: #000000;
+      width: 90%;
+      text-align: center;
+      margin:0 auto;
+      position: absolute;
+      top:27%;
+    }
+  }
+  @media only screen and (min-width: 620px) and (max-width: 700px) {
 
+
+    .shape-container {
+      position: relative;
+      width:65vw;
+      height: 70vw;
+      overflow: hidden;
+      margin:5% auto;
+    }
+    
+    /* Rectangle Style */
+    .rectangle {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
+      border-radius: 40px;
+      font-size: 1.5rem;
+      display: flex;
+     
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Ellipse (Circle) Style */
+    .circle {
+      position: absolute;
+      width: 30vw;
+      height: 30vw;
+      background: rgb(12, 5, 0);
+      border-radius: 50%;
+      top: 0;
+      left: 50%;
+   margin-bottom: 5%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF; /* Text color inside the circle */
+    
+    }
+    .content {
+      display: flex;
+      width: 100%;
+     
+      flex-direction: column;
+      align-items: center;
+      margin-top:45%; /* Add margin-top */
+    }
+    
+    /* Text Style inside the Circle */
+    .number {
+      font-family: "Rubik";
+      font-size: 3rem;
+      margin-top: 25%;
+    }
+    
+    /* Title Style */
+    .title {
+      font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
+      font-size: 1.9rem;
+  position:absolute;
+      color: #000000;
+      top:18%;
+    }
+    
+    /* Description Style */
+    .description {
+         direction: rtl;
+      font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
+      font-size:1rem;
+      color: #000000;
+      width: 90%;
+      text-align: center;
+      margin:0 auto;
+      position: absolute;
+      top:30%;
+    }
   }
   @media only screen and (min-width: 700px) and (max-width: 750px) {
 
 
     .shape-container {
-        position: relative;
-        width:65vw;
-        height: 45vw;
-        overflow: hidden;
-        margin:5% auto;
-      }
-      
-      /* Rectangle Style */
-      .rectangle {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
-        border-radius: 40px;
-        font-size: 1.5rem;
-        display: flex;
-       
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      /* Ellipse (Circle) Style */
-      .circle {
-        position: absolute;
-        width: 20vw;
-        height: 20vw;
-        background: #0f0f0f;
-        border-radius: 50%;
-        top: 0;
-        left: 50%;
-     margin-bottom: 5%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF; /* Text color inside the circle */
-      
-      }
-      .content {
-        display: flex;
-        width: 100%;
-   
-        flex-direction: column;
-        align-items: center;
-        margin-top:45%; /* Add margin-top */
-      }
-      
-      /* Text Style inside the Circle */
-      .number {
-        font-family: "Rubik";
-        font-size: 3rem;
-        margin-top: 25%;
-      }
-      
-      /* Title Style */
-      .title {
-        font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
-        font-size: 1.9rem;
-    margin-top:10%;
-        color: #000000;
-      }
-      
-      /* Description Style */
-      .description {
-           direction: rtl;
-        font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
-        font-size:1.05rem;
-        color: #000000;
-        width: 90%;
-        text-align: center;
-        margin:0 auto;
-        gap: 0.5rem;
-      }
+      position: relative;
+      width:75vw;
+      height: 80vw;
+      overflow: hidden;
+      margin:5% auto;
+    }
+    
+    /* Rectangle Style */
+    .rectangle {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
+      border-radius: 40px;
+      font-size: 1.5rem;
+      display: flex;
+     
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Ellipse (Circle) Style */
+    .circle {
+      position: absolute;
+      width: 30vw;
+      height: 30vw;
+      background: rgb(12, 5, 0);
+      border-radius: 50%;
+      top: 0;
+      left: 50%;
+   margin-bottom: 5%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF; /* Text color inside the circle */
+    
+    }
+    .content {
+      display: flex;
+      width: 100%;
+     
+      flex-direction: column;
+      align-items: center;
+      margin-top:45%; /* Add margin-top */
+    }
+    
+    /* Text Style inside the Circle */
+    .number {
+      font-family: "Rubik";
+      font-size: 3rem;
+      margin-top: 25%;
+    }
+    
+    /* Title Style */
+    .title {
+      font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
+      font-size: 1.9rem;
+  position:absolute;
+      color: #000000;
+      top:16%;
+    }
+    
+    /* Description Style */
+    .description {
+         direction: rtl;
+      font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
+      font-size:1.1rem;
+      color: #000000;
+      width: 90%;
+      text-align: center;
+      margin:0 auto;
+      position: absolute;
+      top:27%;
+    }
+  }
+  @media only screen and (min-width: 700px) and (max-width: 750px) {
+
+
+    .shape-container {
+      position: relative;
+      width:55vw;
+      height: 60vw;
+      overflow: hidden;
+      margin:5% auto;
+    }
+    
+    /* Rectangle Style */
+    .rectangle {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
+      border-radius: 40px;
+      font-size: 1.5rem;
+      display: flex;
+     
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Ellipse (Circle) Style */
+    .circle {
+      position: absolute;
+      width: 20vw;
+      height: 20vw;
+      background: rgb(12, 5, 0);
+      border-radius: 50%;
+      top: 0;
+      left: 50%;
+   margin-bottom: 5%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF; /* Text color inside the circle */
+    
+    }
+    .content {
+      display: flex;
+      width: 100%;
+     
+      flex-direction: column;
+      align-items: center;
+      margin-top:45%; /* Add margin-top */
+    }
+    
+    /* Text Style inside the Circle */
+    .number {
+      font-family: "Rubik";
+      font-size: 3rem;
+      margin-top: 25%;
+    }
+    
+    /* Title Style */
+    .title {
+      font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
+      font-size: 1.7rem;
+  position:absolute;
+      color: #000000;
+      top:15%;
+    }
+    
+    /* Description Style */
+    .description {
+         direction: rtl;
+      font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
+      font-size:1rem;
+      color: #000000;
+      width: 90%;
+      text-align: center;
+      margin:0 auto;
+      position: absolute;
+      top:27%;
+    }
 
   }
   @media only screen and (min-width: 750px) and (max-width: 800px) {
 
 
     .shape-container {
-        position: relative;
-        width:55vw;
-        height: 40vw;
-        overflow: hidden;
-        margin:5% auto;
-      }
-      
-      /* Rectangle Style */
-      .rectangle {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
-        border-radius: 40px;
-        font-size: 1.5rem;
-        display: flex;
-       
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      /* Ellipse (Circle) Style */
-      .circle {
-        position: absolute;
-        width: 15vw;
-        height: 15vw;
-        background: #0f0f0f;
-        border-radius: 50%;
-        top: 0;
-        left: 50%;
-     margin-bottom: 5%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF; /* Text color inside the circle */
-      
-      }
-      .content {
-        display: flex;
-        width: 100%;
-   
-        flex-direction: column;
-        align-items: center;
-        margin-top:45%; /* Add margin-top */
-      }
-      
-      /* Text Style inside the Circle */
-      .number {
-        font-family: "Rubik";
-        font-size: 3rem;
-        margin-top: 25%;
-      }
-      
-      /* Title Style */
-      .title {
-        font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
-        font-size: 1.8rem;
-    margin-top:10%;
-        color: #000000;
-      }
-      
-      /* Description Style */
-      .description {
-           direction: rtl;
-        font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
-        font-size:1.1rem;
-        color: #000000;
-        width: 90%;
-        text-align: center;
-        margin:0 auto;
-        gap: 0.5rem;
-      }
+      position: relative;
+      width:45vw;
+      height: 55vw;
+      overflow: hidden;
+      margin:5% auto;
+    }
+    
+    /* Rectangle Style */
+    .rectangle {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
+      border-radius: 40px;
+      font-size: 1.5rem;
+      display: flex;
+     
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Ellipse (Circle) Style */
+    .circle {
+      position: absolute;
+      width: 20vw;
+      height: 20vw;
+      background: rgb(12, 5, 0);
+      border-radius: 50%;
+      top: 0;
+      left: 50%;
+   margin-bottom: 5%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF; /* Text color inside the circle */
+    
+    }
+    .content {
+      display: flex;
+      width: 100%;
+     
+      flex-direction: column;
+      align-items: center;
+      margin-top:45%; /* Add margin-top */
+    }
+    
+    /* Text Style inside the Circle */
+    .number {
+      font-family: "Rubik";
+      font-size: 3rem;
+      margin-top: 25%;
+    }
+    
+    /* Title Style */
+    .title {
+      font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
+      font-size: 1.7rem;
+  position:absolute;
+      color: #000000;
+      top:15%;
+    }
+    
+    /* Description Style */
+    .description {
+         direction: rtl;
+      font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
+      font-size:1rem;
+      color: #000000;
+      width: 90%;
+      text-align: center;
+      margin:0 auto;
+      position: absolute;
+      top:27%;
+    }
 
   }
   @media only screen and (min-width: 800px) and (max-width: 850px) {
 
 
     .shape-container {
-        position: relative;
-        width:55vw;
-        height: 35vw;
-        overflow: hidden;
-        margin:5% auto;
-      }
-      
-      /* Rectangle Style */
-      .rectangle {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
-        border-radius: 40px;
-        font-size: 1.5rem;
-        display: flex;
-       
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      /* Ellipse (Circle) Style */
-      .circle {
-        position: absolute;
-        width: 15vw;
-        height: 15vw;
-        background: #0f0f0f;
-        border-radius: 50%;
-        top: 0;
-        left: 50%;
-     margin-bottom: 5%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF; /* Text color inside the circle */
-      
-      }
-      .content {
-        display: flex;
-        width: 100%;
-   
-        flex-direction: column;
-        align-items: center;
-        margin-top:45%; /* Add margin-top */
-      }
-      
-      /* Text Style inside the Circle */
-      .number {
-        font-family: "Rubik";
-        font-size: 3rem;
-        margin-top: 25%;
-      }
-      
-      /* Title Style */
-      .title {
-        font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
-        font-size: 1.8rem;
-    margin-top:10%;
-        color: #000000;
-      }
-      
-      /* Description Style */
-      .description {
-           direction: rtl;
-        font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
-        font-size:1.1rem;
-        color: #000000;
-        width: 90%;
-        text-align: center;
-        margin:0 auto;
-        gap: 0.5rem;
-      }
+      position: relative;
+      width:45vw;
+      height: 50vw;
+      overflow: hidden;
+      margin:5% auto;
+    }
+    
+    /* Rectangle Style */
+    .rectangle {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
+      border-radius: 40px;
+      font-size: 1.5rem;
+      display: flex;
+     
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Ellipse (Circle) Style */
+    .circle {
+      position: absolute;
+      width: 15vw;
+      height: 15vw;
+      background: rgb(12, 5, 0);
+      border-radius: 50%;
+      top: 0;
+      left: 50%;
+   margin-bottom: 5%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF; /* Text color inside the circle */
+    
+    }
+    .content {
+      display: flex;
+      width: 100%;
+     
+      flex-direction: column;
+      align-items: center;
+      margin-top:45%; /* Add margin-top */
+    }
+    
+    /* Text Style inside the Circle */
+    .number {
+      font-family: "Rubik";
+      font-size: 3rem;
+      margin-top: 25%;
+    }
+    
+    /* Title Style */
+    .title {
+      font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
+      font-size: 1.7rem;
+  position:absolute;
+      color: #000000;
+      top:12%;
+    }
+    
+    /* Description Style */
+    .description {
+         direction: rtl;
+      font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
+      font-size:1rem;
+      color: #000000;
+      width: 90%;
+      text-align: center;
+      margin:0 auto;
+      position: absolute;
+      top:25%;
+    }
 
   }
   @media only screen and (min-width: 850px) and (max-width: 950px) {
 
 
-    .shape-container {
-        position: relative;
-        width:60vw;
-        height: 35vw;
-        overflow: hidden;
-        margin:5% auto;
-      }
-      
-      /* Rectangle Style */
-      .rectangle {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
-        border-radius: 40px;
-        font-size: 1.5rem;
-        display: flex;
-       
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      /* Ellipse (Circle) Style */
-      .circle {
-        position: absolute;
-        width: 15vw;
-        height: 15vw;
-        background: #0f0f0f;
-        border-radius: 50%;
-        top: 0;
-        left: 50%;
-     margin-bottom: 5%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF; /* Text color inside the circle */
-      
-      }
-      .content {
-        display: flex;
-        width: 100%;
    
-        flex-direction: column;
-        align-items: center;
-        margin-top:45%; /* Add margin-top */
-      }
-      
-      /* Text Style inside the Circle */
-      .number {
-        font-family: "Rubik";
-        font-size: 3rem;
-        margin-top: 25%;
-      }
-      
-      /* Title Style */
-      .title {
-        font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
-        font-size: 1.9rem;
-    margin-top:10%;
-        color: #000000;
-      }
-      
-      /* Description Style */
-      .description {
-           direction: rtl;
-        font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
-        font-size:1.2rem;
-        color: #000000;
-        width: 90%;
-        text-align: center;
-        margin:0 auto;
-        gap: 0.5rem;
-      }
-
+    .shape-container {
+      position: relative;
+      width:45vw;
+      height: 50vw;
+      overflow: hidden;
+      margin:5% auto;
+    }
+    
+    /* Rectangle Style */
+    .rectangle {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
+      border-radius: 40px;
+      font-size: 1.5rem;
+      display: flex;
+     
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Ellipse (Circle) Style */
+    .circle {
+      position: absolute;
+      width: 15vw;
+      height: 15vw;
+      background: rgb(12, 5, 0);
+      border-radius: 50%;
+      top: 0;
+      left: 50%;
+   margin-bottom: 5%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF; /* Text color inside the circle */
+    
+    }
+    .content {
+      display: flex;
+      width: 100%;
+     
+      flex-direction: column;
+      align-items: center;
+      margin-top:45%; /* Add margin-top */
+    }
+    
+    /* Text Style inside the Circle */
+    .number {
+      font-family: "Rubik";
+      font-size: 3rem;
+      margin-top: 25%;
+    }
+    
+    /* Title Style */
+    .title {
+      font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
+      font-size: 1.9rem;
+  position:absolute;
+      color: #000000;
+      top:12%;
+    }
+    
+    /* Description Style */
+    .description {
+         direction: rtl;
+      font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
+      font-size:1.05rem;
+      color: #000000;
+      width: 90%;
+      text-align: center;
+      margin:0 auto;
+      position: absolute;
+      top:25%;
+    }
   }
  
   @media only screen and (min-width: 950px) and (max-width: 1050px) {
-
-
-    .shape-container {
-        position: relative;
-        width:60vw;
-        height: 35vw;
-        overflow: hidden;
-        margin:5% auto;
-      }
-      
-      /* Rectangle Style */
-      .rectangle {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
-        border-radius: 40px;
-        font-size: 1.5rem;
-        display: flex;
-       
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      /* Ellipse (Circle) Style */
-      .circle {
-        position: absolute;
-        width: 15vw;
-        height: 15vw;
-        background: #0f0f0f;
-        border-radius: 50%;
-        top: 0;
-        left: 50%;
-     margin-bottom: 5%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF; /* Text color inside the circle */
-      
-      }
-      .content {
-        display: flex;
-        width: 100%;
    
-        flex-direction: column;
-        align-items: center;
-        margin-top:45%; /* Add margin-top */
-      }
-      
-      /* Text Style inside the Circle */
-      .number {
-        font-family: "Rubik";
-        font-size: 3rem;
-        margin-top: 25%;
-      }
-      
-      /* Title Style */
-      .title {
-        font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
-        font-size: 2rem;
-    margin-top:10%;
-        color: #000000;
-      }
-      
-      /* Description Style */
-      .description {
-           direction: rtl;
-        font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
-        font-size:1.3rem;
-        color: #000000;
-        width: 90%;
-        text-align: center;
-        margin:0 auto;
-        gap: 0.5rem;
-      }
+    .shape-container {
+      position: relative;
+      width:45vw;
+      height: 45vw;
+      overflow: hidden;
+      margin:5% auto;
+    }
+    
+    /* Rectangle Style */
+    .rectangle {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
+      border-radius: 40px;
+      font-size: 1.5rem;
+      display: flex;
+     
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Ellipse (Circle) Style */
+    .circle {
+      position: absolute;
+      width: 15vw;
+      height: 15vw;
+      background: rgb(12, 5, 0);
+      border-radius: 50%;
+      top: 0;
+      left: 50%;
+   margin-bottom: 5%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF; /* Text color inside the circle */
+    
+    }
+    .content {
+      display: flex;
+      width: 100%;
+     
+      flex-direction: column;
+      align-items: center;
+      margin-top:45%; /* Add margin-top */
+    }
+    
+    /* Text Style inside the Circle */
+    .number {
+      font-family: "Rubik";
+      font-size: 3rem;
+      margin-top: 25%;
+    }
+    
+    /* Title Style */
+    .title {
+      font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
+      font-size: 1.9rem;
+  position:absolute;
+      color: #000000;
+      top:15%;
+    }
+    
+    /* Description Style */
+    .description {
+         direction: rtl;
+      font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
+      font-size:1rem;
+      color: #000000;
+      width: 85%;
+      text-align: center;
+      margin:0 auto;
+      position: absolute;
+      top:27%;
+    }
 
   }
   @media only screen and (min-width: 1050px) and (max-width: 1150px) {
 
-
     .shape-container {
-        position: relative;
-        width:55vw;
-        height: 35vw;
-        overflow: hidden;
-        margin:5% auto;
-      }
-      
-      /* Rectangle Style */
-      .rectangle {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
-        border-radius: 40px;
-        font-size: 1.5rem;
-        display: flex;
-       
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      /* Ellipse (Circle) Style */
-      .circle {
-        position: absolute;
-        width: 15vw;
-        height: 15vw;
-        background: #0f0f0f;
-        border-radius: 50%;
-        top: 0;
-        left: 50%;
-     margin-bottom: 5%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF; /* Text color inside the circle */
-      
-      }
-      .content {
-        display: flex;
-        width: 100%;
-   
-        flex-direction: column;
-        align-items: center;
-        margin-top:45%; /* Add margin-top */
-      }
-      
-      /* Text Style inside the Circle */
-      .number {
-        font-family: "Rubik";
-        font-size: 3rem;
-        margin-top: 25%;
-      }
-      
-      /* Title Style */
-      .title {
-        font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
-        font-size: 2rem;
-    margin-top:10%;
-        color: #000000;
-      }
-      
-      /* Description Style */
-      .description {
-           direction: rtl;
-        font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
-        font-size:1.3rem;
-        color: #000000;
-        width: 90%;
-        text-align: center;
-        margin:0 auto;
-        gap: 0.5rem;
-      }
+      position: relative;
+      width:45vw;
+      height: 45vw;
+      overflow: hidden;
+      margin:5% auto;
+    }
+    
+    /* Rectangle Style */
+    .rectangle {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
+      border-radius: 40px;
+      font-size: 1.5rem;
+      display: flex;
+     
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Ellipse (Circle) Style */
+    .circle {
+      position: absolute;
+      width: 15vw;
+      height: 15vw;
+      background: rgb(12, 5, 0);
+      border-radius: 50%;
+      top: 0;
+      left: 50%;
+   margin-bottom: 5%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF; /* Text color inside the circle */
+    
+    }
+    .content {
+      display: flex;
+      width: 100%;
+     
+      flex-direction: column;
+      align-items: center;
+      margin-top:45%; /* Add margin-top */
+    }
+    
+    /* Text Style inside the Circle */
+    .number {
+      font-family: "Rubik";
+      font-size: 3rem;
+      margin-top: 25%;
+    }
+    
+    /* Title Style */
+    .title {
+      font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
+      font-size: 1.9rem;
+  position:absolute;
+      color: #000000;
+      top:15%;
+    }
+    
+    /* Description Style */
+    .description {
+         direction: rtl;
+      font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
+      font-size:1.1rem;
+      color: #000000;
+      width: 85%;
+      text-align: center;
+      margin:0 auto;
+      position: absolute;
+      top:27%;
+    }
 
   }
  
-  @media only screen and (min-width: 1150px) and (max-width: 1400px) {
+  @media only screen and (min-width: 1150px) and (max-width: 1250px) {
     .shape-container {
-        position: relative;
-        width: 30vw;
-        height: 25vw;
-        overflow: hidden;
-        
-      }
-      
-      /* Rectangle Style */
-      .rectangle {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
-        border-radius: 40px;
-        font-size: 1.5rem;
-        display: flex;
-       
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      /* Ellipse (Circle) Style */
-      .circle {
-        position: absolute;
-        width: 10vw;
-        height: 10vw;
-        background: #0f0f0f;
-        border-radius: 50%;
-        top: 3%;
-        left: 50%;
-     margin-bottom: 5%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF; /* Text color inside the circle */
-      
-      }
-      .content {
-        display: flex;
-        width: 100%;
-       
-        flex-direction: column;
-        align-items: center;
-        margin-top:20%; /* Add margin-top */
-      }
-      
-      /* Text Style inside the Circle */
-      .number {
-        font-family: "Rubik";
-        font-size: 4rem;
-        margin-top: 25%;
-      }
-      
-      /* Title Style */
-      .title {
-        font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
-        font-size: 1.5rem;
-        margin-top:15%;
-        color: #000000;
-      }
-      
-      /* Description Style */
-      .description {
-           direction: rtl;
-        font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
-        font-size: 1rem;
-        color: #000000;
-        width: 95%;
-        text-align: center;
-        margin:0 auto;
-
-      }
-
+      position: relative;
+      width:40vw;
+      height: 40vw;
+      overflow: hidden;
+      margin:5% auto;
+    }
+    
+    /* Rectangle Style */
+    .rectangle {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
+      border-radius: 40px;
+      font-size: 1.5rem;
+      display: flex;
+     
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Ellipse (Circle) Style */
+    .circle {
+      position: absolute;
+      width: 15vw;
+      height: 15vw;
+      background: rgb(12, 5, 0);
+      border-radius: 50%;
+      top: 0;
+      left: 50%;
+   margin-bottom: 5%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF; /* Text color inside the circle */
+    
+    }
+    .content {
+      display: flex;
+      width: 100%;
+     
+      flex-direction: column;
+      align-items: center;
+      margin-top:45%; /* Add margin-top */
+    }
+    
+    /* Text Style inside the Circle */
+    .number {
+      font-family: "Rubik";
+      font-size: 3rem;
+      margin-top: 25%;
+    }
+    
+    /* Title Style */
+    .title {
+      font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
+      font-size: 1.9rem;
+  position:absolute;
+      color: #000000;
+      top:15%;
+    }
+    
+    /* Description Style */
+    .description {
+         direction: rtl;
+      font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
+      font-size:1.1rem;
+      color: #000000;
+      width: 85%;
+      text-align: center;
+      margin:0 auto;
+      position: absolute;
+      top:27%;
+    }
 
   }
  
- 
+  @media only screen and (min-width: 1250px) and (max-width: 1350px) {
+    .shape-container {
+      position: relative;
+      width:40vw;
+      height: 40vw;
+      overflow: hidden;
+      margin:5% auto;
+    }
+    
+    /* Rectangle Style */
+    .rectangle {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
+      border-radius: 40px;
+      font-size: 1.5rem;
+      display: flex;
+     
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Ellipse (Circle) Style */
+    .circle {
+      position: absolute;
+      width: 15vw;
+      height: 15vw;
+      background: rgb(12, 5, 0);
+      border-radius: 50%;
+      top: 0;
+      left: 50%;
+   margin-bottom: 5%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF; /* Text color inside the circle */
+    
+    }
+    .content {
+      display: flex;
+      width: 100%;
+     
+      flex-direction: column;
+      align-items: center;
+      margin-top:45%; /* Add margin-top */
+    }
+    
+    /* Text Style inside the Circle */
+    .number {
+      font-family: "Rubik";
+      font-size: 3rem;
+      margin-top: 25%;
+    }
+    
+    /* Title Style */
+    .title {
+      font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
+      font-size: 1.9rem;
+  position:absolute;
+      color: #000000;
+      top:16%;
+    }
+    
+    /* Description Style */
+    .description {
+         direction: rtl;
+      font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
+      font-size:1.25rem;
+      color: #000000;
+      width: 80%;
+      text-align: center;
+      margin:0 auto;
+      position: absolute;
+      top:27%;
+    }
+
+  }
+  @media only screen and (min-width: 1500px) and (max-width: 1600px) {
+    .shape-container {
+      position: relative;
+      width:30vw;
+      height: 35vw;
+      overflow: hidden;
+      margin:5% auto;
+    }
+    
+    /* Rectangle Style */
+    .rectangle {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
+      border-radius: 40px;
+      font-size: 1.5rem;
+      display: flex;
+     
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Ellipse (Circle) Style */
+    .circle {
+      position: absolute;
+      width: 12vw;
+      height: 12vw;
+      background: rgb(12, 5, 0);
+      border-radius: 50%;
+      top: 0;
+      left: 50%;
+   margin-bottom: 5%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF; /* Text color inside the circle */
+    
+    }
+    .content {
+      display: flex;
+      width: 100%;
+     
+      flex-direction: column;
+      align-items: center;
+      margin-top:45%; /* Add margin-top */
+    }
+    
+    /* Text Style inside the Circle */
+    .number {
+      font-family: "Rubik";
+      font-size: 3rem;
+      margin-top: 25%;
+    }
+    
+    /* Title Style */
+    .title {
+      font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
+      font-size: 1.9rem;
+  position:absolute;
+      color: #000000;
+      top:18%;
+    }
+    
+    /* Description Style */
+    .description {
+         direction: rtl;
+      font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
+      font-size:1.1rem;
+      color: #000000;
+      width: 75%;
+      text-align: center;
+      margin:0 auto;
+      position: absolute;
+      top:29%;
+    }
+  }
+  @media only screen and (min-width: 1350px) and (max-width: 1500px) {
+    .shape-container {
+      position: relative;
+      width:35vw;
+      height: 35vw;
+      overflow: hidden;
+      margin:5% auto;
+    }
+    
+    /* Rectangle Style */
+    .rectangle {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(179deg, rgba(255,237,212,1) 0%, rgba(255,144,81,1) 100%);
+      border-radius: 40px;
+      font-size: 1.5rem;
+      display: flex;
+     
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Ellipse (Circle) Style */
+    .circle {
+      position: absolute;
+      width: 12vw;
+      height: 12vw;
+      background: rgb(12, 5, 0);
+      border-radius: 50%;
+      top: 0;
+      left: 50%;
+   margin-bottom: 5%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF; /* Text color inside the circle */
+    
+    }
+    .content {
+      display: flex;
+      width: 100%;
+     
+      flex-direction: column;
+      align-items: center;
+      margin-top:45%; /* Add margin-top */
+    }
+    
+    /* Text Style inside the Circle */
+    .number {
+      font-family: "Rubik";
+      font-size: 3rem;
+      margin-top: 25%;
+    }
+    
+    /* Title Style */
+    .title {
+      font-family: "Rubik"; /* Change "YourTitleFont" to the desired font for the title */
+      font-size: 1.9rem;
+  position:absolute;
+      color: #000000;
+      top:18%;
+    }
+    
+    /* Description Style */
+    .description {
+         direction: rtl;
+      font-family: "RubikR"; /* Change "YourDescriptionFont" to the desired font for the description */
+      font-size:1.1rem;
+      color: #000000;
+      width: 75%;
+      text-align: center;
+      margin:0 auto;
+      position: absolute;
+      top:29%;
+    }
+  }

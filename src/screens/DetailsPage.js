@@ -2,12 +2,13 @@ import { useEffect, useRef, useState } from "react";
 import Button from "../components/Button"
 import  styles from "./DetailsPage.module.css"
 import ScrollReveal from "scrollreveal";
+import logo from "../images/home-x logo.png"
 const DetailsPage=()=>{
-
+  const [submitted ,setSubmitted]=useState(false)
   const nameRef=useRef('')
     const phoneRef=useRef('')
     const emailRef=useRef('')
-
+     const reciver="nirbd94@gmail.com" 
 
 
 
@@ -56,9 +57,10 @@ const DetailsPage=()=>{
       name:name,
       phone:phone,
       email:email,
-      reciver:"nir@home-x.co.il"
+      
+      reciver:reciver
      }
-  const response= await fetch('',{
+  const response= await fetch('https://dynamic-server-dfc88e1f1c54.herokuapp.com/leads/newLead',{
       method:"POST",
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify(formData)
@@ -70,18 +72,19 @@ const DetailsPage=()=>{
           nameRef.current.value=""
           phoneRef.current.value=""
           emailRef.current.value=""
-      
+         setSubmitted(true)
           }
+      
   }
 
 
 
 return <>
 
-<div className={styles.container}>
+{!submitted &&<div className={styles.container}>
 
-    <div className={styles.title} id="צור קשר">הכל מתחיל כאן</div>
-<form className={styles.form}>
+<div className={styles.title} id="צור קשר">הכל מתחיל כאן</div>
+  <form className={styles.form}>
 <input ref={nameRef} className={styles.input} placeholder="שם מלא"></input>
 <input ref={phoneRef} className={styles.input} placeholder="מספר טלפון"></input>
 <input ref={emailRef} className={styles.input}  placeholder="דוא''ל"></input>
@@ -93,7 +96,12 @@ return <>
 </form>
 
 
-</div>
+</div>}
+{submitted && <><div className={styles.title}>תודה שבחרת</div>
+<div className={styles.center}><img className={styles.logo} src={logo}/></div>
+<div className={styles.p}>נחזור אליך בהקדם האפשרי</div>
+</>
+}
 </>
 
 

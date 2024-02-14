@@ -58,7 +58,7 @@ const FifthScreen=()=>{
     },[])
 
 return <>
-<div className={styles.title}>למה צריך יועץ משכנתאות ?</div>
+<div className={styles.title}>למה בעצם צריך יועץ משכנתאות ?</div>
 <div className={styles.bigWrapper}>
 
 <div className={styles.step}>
@@ -69,7 +69,9 @@ icon={brain}/>
 <div className={styles.text}>
 
     <div className={styles.stepHeader}>ידע וניסיון </div>
-    <div className={styles.section}>יועץ משכנתאות הוא מומחה שעוסק בתחום כל הזמן. הוא מכיר את כל המוצרים, הבנקים, התנאים וההסדרים השונים שיש בשוק המשכנתאות. לכן הוא יכול להתאים את המשכנתא הכי טובה עבורכם. </div>
+    <div className={styles.section}>תחסכו מכם טעויות קריטיות והמון כסף. 
+יועץ משכנתאות מנוסה, מביא עימו ידע רחב ועשיר בתחום המשכנתאות , הוא מכיר היטב את כל החוקים, התנאים והמגמות בשוק המשכנתאות 
+המשתנה תדיר היועץ יתכנן עבורך ויעזור לך לקבל את המשכנתא המתאימה בדיוק לצרכיך וליכולותיך הכלכליות</div>
 </div>
 </div>
 {/* חץ לשלב הבא */}
@@ -80,7 +82,8 @@ icon={brain}/>
 
  
 <div className={styles.stepHeader}>חיסכון בזמן </div>
-    <div className={styles.section}>תהליך לקיחת משכנתא הוא מורכב וכרוך בהרבה ניירת וטפסים. יועץ המשכנתאות ייקח את זה על עצמו ויחסוך לך המון זמן וכאב ראש.</div>
+    <div className={styles.section}>הליך לקיחת משכנתא הינו מורכב עבור מי שאינו חי את התחום וכרוך בהרבה בירוקרטיה וניירת. יועץ המשכנתאות יבצע זאת עבורכם, יקצר את 
+זמני התהליך וימנע מכם כאב ראש</div>
 </div>
 <div className={styles.icons}>
 <Player ref={playerRef2} delay={500} size="100%" onComplete={() => playerRef2.current?.playFromBeginning()}
@@ -98,7 +101,8 @@ icon={nagotiation}/>
 <div className={styles.text}>
 
     <div className={styles.stepHeader}>מו"מ טוב יותר</div>
-    <div className={styles.section}>יועץ משכנתאות מנוסה יודע לנהל מו"מ טוב יותר מול הבנקים כדי להשיג עבורך את התנאים הכי טובים.</div>
+    <div className={styles.section}>כלקוח בודד מול המערכת הבנקאית, הסיכויים שלנו להוזלה משמעותית של המשכנתא נמוכים. 
+ליועץ משכנתאות מקצועי ומנוסה, יש את הידע והקשרים הנדרשים כדי לנהל עבורך משא ומתן תקיף ולהשיג את התנאים הטובים ביותר.</div>
 </div>
 </div>
 <div className={styles.step}>
@@ -107,7 +111,7 @@ icon={nagotiation}/>
 
  
 <div className={styles.stepHeader}>התאמה אישית </div>
-    <div className={styles.section}>יועץ המשכנתאות יבדוק את מצבך האישי וימליץ לך על המשכנתא הכי מתאימה עבורך, בהתאם לצרכים וליכולות שלך.</div>
+    <div className={styles.section}>יועץ המשכנתאות יאפיין במקצועיות את מצבך הפיננסי ויבנה עבורך משכנתא ייחודית המתאימה לצרכים וליכולות שלך.</div>
 </div>
 <div className={styles.icons}>
 <Player ref={playerRef4} delay={500} size="100%" onComplete={() => playerRef4.current?.playFromBeginning()}

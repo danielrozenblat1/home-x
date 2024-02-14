@@ -1,7 +1,7 @@
 import styles from "./FirstScreen.module.css"
- import nir from "../images/nir.png"
-import home from "../icons/wired-lineal-63-home.json"
 
+import home from "../icons/wired-lineal-63-home.json"
+import logo from "../images/home-x logo.png"
 import { Player } from '@lordicon/react';
 import { useEffect,useRef } from "react"
 import ScrollReveal from "scrollreveal"
@@ -74,8 +74,10 @@ return <>
 </div>
 
 <div className={styles.rightSide}>
+{window.innerWidth <650 && <div className={styles.center}><img className={styles.logo} src={logo} alt="home-x ייעוץ משכנתאות"/></div>}
 <div className={styles.title}>הבית שלכם בדרך למשכנתא</div>
-<div className={styles.slogen} id="slogen">ייעוץ משכנתאות | פתרונות מימון | ייעוץ בכל סוגי המשכנתאות | איחוד הלוואות אחראי | גיוס אשראי מהיר | ביטוחים ופנסיה | ליווי אישי לאורך כל הדרך  </div>
+
+<div className={styles.slogen} id="slogen">ייעוץ כל סוגי המשכנתאות | פתרונות מימון יצירתיים | איחוד הלוואות אחראי | ליווי אישי לאורך כל הדרך  </div>
 <div className={styles.buttons}>
   <Button text ="לשיחת ייעוץ חינמית"/>
  

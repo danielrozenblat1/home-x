@@ -38,6 +38,17 @@
     font-family: "RubikR";
     color:white;
 }
+.p{
+    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+    direction: rtl;
+    margin:3% auto;
+    font-family: "RubikR";
+    color:rgb(255, 227, 208);
+    width:50%;
+  line-height:2;
+}
 .explain{
     font-size: 22px;
    
@@ -51,7 +62,8 @@
 .wrap{
 
     width:100%;
-    
+    background: linear-gradient(90deg, rgba(219, 110, 0, 0.184) 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 85%, rgba(219, 110, 0, 0.171) 100%);
+border-radius: 5%;;
     height:auto;
 }
 .svg{
@@ -128,6 +140,17 @@ align-items: center;
         margin:5% auto;
         font-family: "RubikR";
     }
+    .p{
+        font-size: 14px;
+        justify-content: center;
+        text-align: center;
+        direction: rtl;
+        margin:5% auto;
+        font-family: "RubikR";
+         color:rgb(255, 227, 208);
+        width:80%;
+      line-height:1.5;
+    }
     .explain{
         font-size: 14px;
        
@@ -179,7 +202,7 @@ align-items: flex-end;
         object-fit: contain;
         display: flex;
         margin:0 auto;
-        width:80%;
+        width:100%;
         justify-content: center;
         align-items: center;
        
@@ -221,6 +244,17 @@ align-items: flex-end;
         align-items: flex-end;
         margin:5% auto;
         font-family: "RubikR";
+    }
+    .p{
+        font-size: 16px;
+        justify-content: center;
+        text-align: center;
+        direction: rtl;
+        margin:5% auto;
+        font-family: "RubikR";
+         color:rgb(255, 227, 208);
+        width:80%;
+      line-height:1.5;
     }
     .explain{
         font-size: 14px;
@@ -316,6 +350,17 @@ align-items: flex-end;
         margin:5% auto;
         font-family: "RubikR";
     }
+    .p{
+        font-size: 16px;
+        justify-content: center;
+        text-align: center;
+        direction: rtl;
+        margin:5% auto;
+        font-family: "RubikR";
+         color:rgb(255, 227, 208);
+        width:80%;
+      line-height:1.5;
+    }
     .explain{
         font-size: 14px;
        
@@ -409,6 +454,17 @@ align-items: flex-end;
         align-items: flex-end;
         margin:5% auto;
         font-family: "RubikR";
+    }
+    .p{
+        font-size: 16px;
+        justify-content: center;
+        text-align: center;
+        direction: rtl;
+        margin:5% auto;
+        font-family: "RubikR";
+         color:rgb(255, 227, 208);
+        width:80%;
+      line-height:2;
     }
     .explain{
         font-size: 14px;
@@ -504,6 +560,17 @@ align-items: flex-end;
         margin:5% auto;
         font-family: "RubikR";
     }
+    .p{
+        font-size: 16px;
+        justify-content: center;
+        text-align: center;
+        direction: rtl;
+        margin:5% auto;
+        font-family: "RubikR";
+         color:rgb(255, 227, 208);
+        width:70%;
+      line-height:2;
+    }
     .explain{
         font-size: 14px;
        
@@ -551,11 +618,11 @@ align-items: flex-end;
     }
     .image{
        
-        height: 250px;
+        height: 300px;
         object-fit: contain;
         display: flex;
         margin:0 auto;
-        width:100%;
+        width:60%;
         justify-content: center;
         align-items: center;
        
@@ -597,6 +664,17 @@ align-items: flex-end;
         align-items: flex-end;
         margin:5% auto;
         font-family: "RubikR";
+    }
+    .p{
+        font-size: 16px;
+        justify-content: center;
+        text-align: center;
+        direction: rtl;
+        margin:5% auto;
+        font-family: "RubikR";
+         color:rgb(255, 227, 208);
+        width:75%;
+      line-height:2;
     }
     .explain{
         font-size: 16px;
@@ -649,7 +727,7 @@ align-items: flex-end;
         object-fit: contain;
         display: flex;
         margin:0 auto;
-        width:100%;
+        width:70%;
         justify-content: center;
         align-items: center;
        
@@ -691,6 +769,17 @@ align-items: flex-end;
         align-items: flex-end;
         margin:5% auto;
         font-family: "RubikR";
+    }
+    .p{
+        font-size: 18px;
+        justify-content: center;
+        text-align: center;
+        direction: rtl;
+        margin:5% auto;
+        font-family: "RubikR";
+         color:rgb(255, 227, 208);
+        width:75%;
+      line-height:2;
     }
     .explain{
         font-size: 16px;
@@ -743,7 +832,7 @@ align-items: flex-end;
         object-fit: contain;
         display: flex;
         margin:0 auto;
-        width:100%;
+        width:60%;
         justify-content: center;
         align-items: center;
        

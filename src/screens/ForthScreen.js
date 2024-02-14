@@ -17,141 +17,198 @@ import styles from "./ForthScreen.module.css";
 import { Link } from 'react-scroll';
 import Button from '../components/Button';
 
+const CustomizedTimeline = () => {
 
+  React.useEffect(() => {
 
-export default function CustomizedTimeline() {
+    ScrollReveal().reveal(`.${styles.title}`, {
+      duration: 500,
+      distance: "30px",
+      origin: "top",
+      easing: "ease-out",
+      reset: false,
+      viewFactor: 0.2,
+      interval: 300,
+      delay: 200,
+      scale: 1,
+    });
 
+    ScrollReveal().reveal(`#item1`, {
+      duration: 500,
+      distance: "30px",
+      origin: "right",
+      easing: "ease-in-out",
+      reset: false,
+      viewFactor: 0.2,
+      interval: 300,
+      delay: 200,
+      scale: 1,
+    });
 
-    React.useEffect(()=>{
-  
-  
-        ScrollReveal().reveal(`.${styles.title}`, {
-            duration: 1000,
-            distance: "30px",
-            origin: "top", // Start from the right side
-            easing: "ease-out",
-            reset:false,
-            viewFactor: 0.2,
-            interval: 300, // Delay between each element
-            delay: 200, // Delay before the animation starts
-            scale: 1, // Set scale to 1 or null
-          });
-          ScrollReveal().reveal(`#item1`, {
-            duration: 1000,
-            distance: "30px",
-            origin: "right", // Start from the right side
-            easing: "ease-in-out",
-            reset:false,
-            viewFactor: 0.2,
-            interval: 300, // Delay between each element
-            delay: 200, // Delay before the animation starts
-            scale: 1, // Set scale to 1 or null
-          });
-          ScrollReveal().reveal(`#item2`, {
-              duration: 1000,
-              distance: "30px",
-              origin: "left", // Start from the right side
-              easing: "ease-in-out",
-              reset:false,
-              viewFactor: 0.2,
-              interval: 300, // Delay between each element
-              delay: 200, // Delay before the animation starts
-              scale: 1, // Set scale to 1 or null
-            });
-            ScrollReveal().reveal(`#item3`, {
-              duration: 1000,
-              distance: "30px",
-              origin: "right", // Start from the right side
-              easing: "ease-in-out",
-              reset:false,
-              viewFactor: 0.2,
-              interval: 300, // Delay between each element
-              delay: 200, // Delay before the animation starts
-              scale: 1, // Set scale to 1 or null
-            });
-       
-    },[])
-  return <>
-  <div className={styles.title} id="תהליך העבודה">תהליך העבודה איתי</div>
-    <Timeline position="alternate">
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
-          align="right"
-          variant="body2"
-          color="white"
-          fontFamily="Rubik"
-       
-        >
-          <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.5rem"   id="item1">
-            1
-          </Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector sx={{ bgcolor: 'white' }}/>
-          <PhoneIcon fontSize="large" sx={{ color: '#ff5f1f' }}/>
-          <TimelineConnector   sx={{ bgcolor: 'white' }}/>
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: '60px', px: 2 }}>
-          <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.2rem" color="white" id="item1" textAlign="right" >
-          שיחת ייעוץ + אפיון 
-          </Typography>
-          <Typography fontFamily="RubikR"  dir="rtl" fontSize="1rem" color="white" id="item1" marginRight="auto" textAlign="right" >
-           הכרת הלקוח, הסברה ללקוח אילו עסקאות הוא יכול לבצע על בסיס הנתונים שהוא מציג ואפיון העסקה יחד איתו
-          </Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
-          variant="body2"
-          color="white"
-          fontFamily="Rubik"
-        >
-          <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.5rem" color="white" id="item2">
-            2
-          </Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector sx={{ bgcolor: 'white' }} />
-          <DescriptionIcon fontSize="large" sx={{ color: '#ff5f1f' }} />
-          <TimelineConnector sx={{ bgcolor: 'white' }} />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: '60px', px: 2 }}>
-          <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.2rem" color="white" id="item2" textAlign="right" >
-          בניית תמהיל מתאים
-          </Typography>
-          <Typography fontFamily="RubikR"  dir="rtl" fontSize="1rem" color="white" id="item2"  marginLeft="auto" textAlign="right"  >
-          נגדיר את מסלולי הריביות, לוחות הסילוקין ומספר שנות כל מסלול, תוך התחשבות בתרחישים עתידיים כמו שינוי מצב פיננסי, פירעונות מוקדמים ועוד...
-          </Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
-          variant="body2"
-          color="white"
-          fontFamily="Rubik"
-        >
-          <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.5rem" id="item3">
-          3
-          </Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector  sx={{ bgcolor: 'white' }}/>
-          <GroupIcon fontSize="large" sx={{ color: '#ff5f1f' }} />
-          <TimelineConnector sx={{ bgcolor: 'white' }} fontFamily="Rubik" />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: '60px', px: 2 }}>
-          <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.2rem" color="white" id="item3" textAlign="right" >
-         משא ומתן מול הבנקים
-          </Typography>
-          <Typography fontFamily="RubikR" dir="rtl" fontSize="1rem" color="white" id="item3" textAlign="right" >
-          לאחר שכבר חסכנו הרבה מאוד כסף בזכות בנייה נכונה של תמהיל , אנחנו ב-Home-X עובדים באופן שוטף מול בנקאיים בכירים בכל הבנקים להשיג עבורכם את הריביות הטובות ביותר ! 
-          </Typography>
-        </TimelineContent>
-      </TimelineItem>
-    </Timeline>
-    <Button text="לשיחת ייעוץ חינמית"/>
+    ScrollReveal().reveal(`#item2`, {
+      duration: 500,
+      distance: "30px",
+      origin: "left",
+      easing: "ease-in-out",
+      reset: false,
+      viewFactor: 0.2,
+      interval: 300,
+      delay: 200,
+      scale: 1,
+    });
+
+    ScrollReveal().reveal(`#item3`, {
+      duration: 1000,
+      distance: "30px",
+      origin: "right",
+      easing: "ease-in-out",
+      reset: false,
+      viewFactor: 0.2,
+      interval: 300,
+      delay: 200,
+      scale: 1,
+    });
+
+  }, []);
+
+  return (
+    <>
+      <div className={styles.title} id="תהליך העבודה">תהליך העבודה איתי</div>
+      <Timeline position="alternate">
+        <TimelineItem>
+          <TimelineOppositeContent
+            sx={{ m: 'auto 0' }}
+            align="right"
+            variant="body2"
+            color="white"
+            fontFamily="Rubik"
+          >
+            <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.5rem" id="item1">
+              1
+            </Typography>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector sx={{ bgcolor: 'white' }} />
+            <PhoneIcon fontSize="large" sx={{ color: '#ff5f1f' }} />
+            <TimelineConnector sx={{ bgcolor: 'white' }} />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: '45px', px: 2, display: 'flex', flexDirection: 'column' }}>
+            <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.2rem" color="white" id="item1" textAlign="right" direction="rtl" marginBottom="0">
+              שיחת ייעוץ ואפיון
+            </Typography>
+            <Typography fontFamily="RubikR" dir="rtl" fontSize="1rem" color="white" id="item1" textAlign="right" marginBottom="0">
+            בשיחה זו נכיר אתכם ואת הנתונים הפיננסיים שלכם. תוך שקלול הנתונים נאפיין את סוגי העסאקות הרלוונטיות עבורכם ואת הפעולות הנדרשות 
+להמשך התהליך
+            </Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent
+            sx={{ m: 'auto 0' }}
+            variant="body2"
+            color="white"
+            fontFamily="Rubik"
+          >
+            <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.5rem" color="white" id="item2">
+              2
+            </Typography>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector sx={{ bgcolor: 'white' }} />
+            <DescriptionIcon fontSize="large" sx={{ color: '#ff5f1f' }} />
+            <TimelineConnector sx={{ bgcolor: 'white' }} />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: '45px', px: 2, display: 'flex', flexDirection: 'column' }}>
+            <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.2rem" color="white" id="item2" textAlign="right" direction="rtl" marginBottom="0">
+            בניית תמהיל משכנתא מותאם אישית
+            </Typography>
+            <Typography fontFamily="RubikR" dir="rtl" fontSize="1rem" color="white" id="item2" marginLeft="auto" textAlign="right" marginBottom="0">
+            בשלב זה נגדיר את מסלולי הריביות, לוחות הסילוקין ומספר שנות כל מסלול, תוך התחשבות בתרחישים עתידיים כמו שינוי מצב פיננסי, שינוי 
+סטטוס בחיים, פירעונות מוקדמים ועוד...
+            </Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent
+            sx={{ m: 'auto 0' }}
+            variant="body2"
+            color="white"
+            fontFamily="Rubik"
+          >
+            <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.5rem" id="item3">
+              3
+            </Typography>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector sx={{ bgcolor: 'white' }} />
+            <GroupIcon fontSize="large" sx={{ color: '#ff5f1f' }} />
+            <TimelineConnector sx={{ bgcolor: 'white' }} fontFamily="Rubik" />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: '45px', px: 2, display: 'flex', flexDirection: 'column' }}>
+            <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.2rem" color="white" id="item3" textAlign="right" direction="rtl" marginBottom="0">
+            משא ומתן מול הבנקים 
+            </Typography>
+            <Typography fontFamily="RubikR" dir="rtl" fontSize="1rem" color="white" id="item3" textAlign="right" marginBottom="0">
+            לאחר שכבר חסכנו הרבה מאוד כסף בזכות בנייה נכונה של תמהיל משכנתא , אנחנו ב-X-Home עובדים באופן שוטף מול בנקאיים בכירים בכל 
+הבנקים ובשלב זה נדאג להשיג עבורכם את הריביות הטובות ביותר ! 
+            </Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent
+            sx={{ m: 'auto 0' }}
+            variant="body2"
+            color="white"
+            fontFamily="Rubik"
+          >
+            <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.5rem" color="white" id="item2">
+              4
+            </Typography>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector sx={{ bgcolor: 'white' }} />
+            <DescriptionIcon fontSize="large" sx={{ color: '#ff5f1f' }} />
+            <TimelineConnector sx={{ bgcolor: 'white' }} />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: '45px', px: 2, display: 'flex', flexDirection: 'column' }}>
+            <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.2rem" color="white" id="item2" textAlign="right" direction="rtl" marginBottom="0">
+            חתימה על משכנתא
+            </Typography>
+            <Typography fontFamily="RubikR" dir="rtl" fontSize="1rem" color="white" id="item2" textAlign="right" marginBottom="0">
+            ברכות ! אושרה לכם משכנתא מותאמת עבורכם באופן אישי. 
+            </Typography>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent
+            sx={{ m: 'auto 0' }}
+            variant="body2"
+            color="white"
+            fontFamily="Rubik"
+          >
+            <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.5rem" id="item3">
+              5
+            </Typography>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector sx={{ bgcolor: 'white' }} />
+            <GroupIcon fontSize="large" sx={{ color: '#ff5f1f' }} />
+            <TimelineConnector sx={{ bgcolor: 'white' }} fontFamily="Rubik" />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: '45px', px: 2, display: 'flex', flexDirection: 'column' }}>
+            <Typography variant="h6" component="span" fontFamily="RubikR" fontSize="1.2rem" color="white" id="item3" textAlign="right" direction="rtl" marginBottom="0">
+            הקשר רק התחיל 
+            </Typography>
+            <Typography fontFamily="RubikR" dir="rtl" fontSize="1rem" color="white" id="item3" textAlign="right" marginBottom="0">
+            אנחנו ב-X-Home מאמינים בשותפים לדרך, ולכן אנחנו מתחייבים להמשיך לתמוך ולהיות זמינים עבורכם בכל שאלה או בקשה
+            </Typography>
+          </TimelineContent>
+        </TimelineItem>
+      </Timeline>
+
+      <Button text="לשיחת ייעוץ חינמית" />
     </>
-}
+  );
+};
+
+export default CustomizedTimeline;

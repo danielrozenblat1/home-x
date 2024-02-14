@@ -7,6 +7,8 @@ import DetailsPage from "./screens/DetailsPage";
 import ForthScreen from "./screens/ForthScreen";
 import FifthScreen from "./screens/FifthScreen";
 import ByMe from "./screens/ByMe";
+import SocialMedia from "./screens/SocialMedia";
+import Reccomends from "./components/Reccomends";
 
 function App() {
   return<>
@@ -16,8 +18,10 @@ function App() {
   <SecondScreen/>
   <DetailsPage/>
 <BasicAccordion/>
-
+<Reccomends/>
 <ForthScreen/>
+
+<SocialMedia/>
 <ByMe/>
 {/* <DetailsPage/> */}
   </>

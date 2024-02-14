@@ -1,0 +1,40 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:3% auto;
+}
+.social{
+font-size: 16px;
+font-family: "RubikR";
+width: 50%;
+text-align: center;
+margin:0 auto;
+color:white
+}
+.image{
+   
+    width:80px;
+    object-fit: contain;
+}
+@media only screen and (max-width: 350px) {
+
+
+    .image{
+        height:40px;
+        width:40px;
+        object-fit: contain;
+    }
+
+}
+@media only screen and (min-width: 350px) and (max-width: 750px) {
+
+
+    .image{
+        height:50px;
+        width:50px;
+        object-fit: contain;
+    }
+
+}
+

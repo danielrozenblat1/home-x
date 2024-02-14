@@ -27,6 +27,20 @@ margin:0 auto;
    justify-content: right;
     width: 100%; /* Added to ensure buttons take full width */
   }
+  .center{
+    width: 60%;
+    justify-content: center;
+    margin:0 auto;
+
+  }
+  .logo{
+
+    width:100%;
+    object-fit: cover;
+    margin:0 auto;
+    justify-content: center;
+
+  }
   .image {
     height: 70%;
     width: 100%;
@@ -61,7 +75,7 @@ margin:0 auto;
         .leftSide {
           display: flex;
           align-items: center;
-          width:90%;
+          width:80%;
           margin:0 auto;
 
         }
@@ -81,8 +95,22 @@ margin:0 auto;
          justify-content: center;
           width: 100%; /* Added to ensure buttons take full width */
         }
+        .center{
+          width: 60%;
+          justify-content: center;
+          margin:0 auto;
+      
+        }
+        .logo{
+      
+          width:100%;
+          object-fit: cover;
+          margin:0 auto;
+          justify-content: center;
+      
+        }
         .image {
-          height: 70%;
+          height: 60%;
           width: 100%;
           object-fit: contain;
           margin:auto 0;
@@ -116,9 +144,23 @@ margin:0 auto;
         .leftSide {
           display: flex;
           align-items: center;
-          width:65%;
+          width:60%;
           margin:0 auto;
 
+        }
+        .center{
+          width: 50%;
+          justify-content: center;
+          margin:2% auto;
+      
+        }
+        .logo{
+      
+          width:100%;
+          object-fit: cover;
+          margin:0 auto;
+          justify-content: center;
+      
         }
 
         .rightSide {
@@ -171,7 +213,7 @@ margin:0 auto;
         .leftSide {
           display: flex;
           align-items: center;
-          width:70%;
+          width:60%;
           margin:0 auto;
 
         }
@@ -180,7 +222,7 @@ margin:0 auto;
           display: flex;
           flex-direction: column;
           margin:auto;
-         height:60%;
+         height:50%;
           justify-content: space-evenly;
         
          
@@ -191,6 +233,20 @@ margin:0 auto;
          justify-content: center;
           width: 100%; /* Added to ensure buttons take full width */
         }
+        .center{
+          width: 40%;
+          justify-content: center;
+          margin:4% auto;
+      
+        }
+        .logo{
+      
+          width:100%;
+          object-fit: cover;
+          margin:0 auto;
+          justify-content: center;
+      
+        }
         .image {
           height: 70%;
           width: 100%;
@@ -199,7 +255,7 @@ margin:0 auto;
         }
         .title {
           font-family: "Rubik";
-          font-size: 2.5rem;
+          font-size: 2.8rem;
           color: white;
           width:100%;
           margin: 0 auto;
@@ -246,6 +302,20 @@ margin:0 auto;
          justify-content: center;
           width: 100%; /* Added to ensure buttons take full width */
         }
+        .center{
+          width: 35%;
+          justify-content: center;
+          margin:4% auto;
+      
+        }
+        .logo{
+      
+          width:100%;
+          object-fit: cover;
+          margin:0 auto;
+          justify-content: center;
+      
+        }
         .image {
           height: 70%;
           width: 100%;
@@ -254,7 +324,7 @@ margin:0 auto;
         }
         .title {
           font-family: "Rubik";
-          font-size: 2.5rem;
+          font-size: 2.8rem;
           color: white;
           width:100%;
           margin: 0 auto;
@@ -274,7 +344,7 @@ margin:0 auto;
       display: flex;
       flex-direction: row;
       height:80vh;
-      width:85%;
+      width:90%;
       margin:0 auto;
         }
         .leftSide {
@@ -307,7 +377,7 @@ margin:0 auto;
         }
         .title {
           font-family: "Rubik";
-          font-size: 2.8rem;
+          font-size: 2.5rem;
           color: white;
           width:90%;
           margin: 0 0 0 auto;
