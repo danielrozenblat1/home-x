@@ -4,7 +4,7 @@ import instagram from "../images/instagram nir ben david.png"
 import whatsapp from "../images/whatsApp nir ben david.png"
 const SocialMedia=()=>{
     const message="היי ניר , הגעתי אליך דרך האתר ,הייתי רוצה "
-    const phoneNumber="+972502337223"
+    const phoneNumber="+972555047034"
     const encodedMessage = encodeURIComponent(message); 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 return<>
