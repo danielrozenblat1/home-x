@@ -149,7 +149,7 @@ const CustomizedTimeline = () => {
             משא ומתן מול הבנקים 
             </Typography>
             <Typography fontFamily="RubikR" dir="rtl" fontSize="1rem" color="white" id="item3" textAlign="right" marginBottom="0">
-            לאחר שכבר חסכנו הרבה מאוד כסף בזכות בנייה נכונה של תמהיל משכנתא , אנחנו ב-Home-X עובדים באופן שוטף מול בנקאיים בכירים בכל 
+            לאחר שכבר חסכנו הרבה מאוד כסף בזכות בנייה נכונה של תמהיל משכנתא , <br/>אנחנו ב Home-X עובדים באופן שוטף מול בנקאיים בכירים בכל 
 הבנקים ובשלב זה נדאג להשיג עבורכם את הריביות הטובות ביותר ! 
             </Typography>
           </TimelineContent>
@@ -200,7 +200,7 @@ const CustomizedTimeline = () => {
             הקשר רק התחיל 
             </Typography>
             <Typography fontFamily="RubikR" dir="rtl" fontSize="1rem" color="white" id="item3" textAlign="right" marginBottom="0">
-            אנחנו ב-Home-X מאמינים בשותפים לדרך, ולכן אנחנו מתחייבים להמשיך לתמוך ולהיות זמינים עבורכם בכל שאלה או בקשה
+            אנחנו ב Home-X <br/> מאמינים בשותפים לדרך, ולכן אנחנו מתחייבים להמשיך לתמוך ולהיות זמינים עבורכם בכל שאלה או בקשה
             </Typography>
           </TimelineContent>
         </TimelineItem>

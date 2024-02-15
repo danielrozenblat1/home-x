@@ -102,7 +102,7 @@ icon={nagotiation}/>
 
     <div className={styles.stepHeader}>מו"מ טוב יותר</div>
     <div className={styles.section}>כלקוח בודד מול המערכת הבנקאית הסיכויים שלנו להוזלה משמעותית של המשכנתא נמוכים. 
-ליועץ משכנתאות מקצועי ומנוסה, יש את הידע והקשרים הנדרשים כדי לנהל עבורך משא ומתן תקיף ולהשיג את התנאים הטובים ביותר</div>
+ליועץ משכנתאות מקצועי ומנוסה יש את הידע והקשרים הנדרשים כדי לנהל עבורך משא ומתן תקיף ולהשיג את התנאים הטובים ביותר</div>
 </div>
 </div>
 <div className={styles.step}>
@@ -111,7 +111,7 @@ icon={nagotiation}/>
 
  
 <div className={styles.stepHeader}>התאמה אישית </div>
-    <div className={styles.section}>יועץ המשכנתאות יאפיין במקצועיות את מצבך הפיננסי ויבנה עבורך משכנתא ייחודית המתאימה לצרכים וליכולות שלך.</div>
+    <div className={styles.section}>יועץ המשכנתאות יאפיין במקצועיות את מצבך הפיננסי ויבנה עבורך משכנתא ייחודית המתאימה לצרכים וליכולות שלך</div>
 </div>
 <div className={styles.icons}>
 <Player ref={playerRef4} delay={500} size="100%" onComplete={() => playerRef4.current?.playFromBeginning()}
