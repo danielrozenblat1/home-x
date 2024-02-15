@@ -65,7 +65,7 @@ const Reccomends=()=>{
             distance: "30px",
             origin: "top", // Start from the right side
             easing: "ease-in-out",
-            reset:true,
+            reset:false,
             viewFactor: 0.2,
             interval: 300, // Delay between each element
             delay: 200, // Delay before the animation starts
@@ -76,7 +76,7 @@ const Reccomends=()=>{
               distance:"30px",
               origin:"top",
               easing: "ease-out",
-              reset:true,
+              reset:false,
               viewFactor: 0.2,
               interval: 500, // Delay between each element
               delay: 200, // Delay before the animation starts
@@ -89,7 +89,7 @@ const Reccomends=()=>{
               distance: "30px",
               origin: "top", // Start from the right side
               easing: "ease-in-out",
-              reset:true,
+              reset:false,
               viewFactor: 0.2,
               interval: 300, // Delay between each element
               delay: 200, // Delay before the animation starts
@@ -100,7 +100,7 @@ const Reccomends=()=>{
               distance: "30px",
               origin: "bottom", // Start from the right side
               easing: "ease-in-out",
-              reset:true,
+              reset:false,
               viewFactor: 0.2,
               interval: 300, // Delay between each element
               delay: 200, // Delay before the animation starts

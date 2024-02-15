@@ -98,7 +98,7 @@ return <>
 
 </div>}
 {submitted && <><div className={styles.title}>תודה שבחרת</div>
-<div className={styles.center}><img className={styles.logo} src={logo}/></div>
+<div className={styles.center}><img className={styles.logo} src={logo} alt="ניר בן דוד home-x"/></div>
 <div className={styles.p}>נחזור אליך בהקדם האפשרי</div>
 </>
 }

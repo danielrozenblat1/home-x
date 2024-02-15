@@ -77,7 +77,7 @@ return <>
 {window.innerWidth <650 && <div className={styles.center}><img className={styles.logo} src={logo} alt="home-x ייעוץ משכנתאות"/></div>}
 <div className={styles.title}>הבית שלכם בדרך למשכנתא</div>
 
-<div className={styles.slogen} id="slogen">ייעוץ כל סוגי המשכנתאות | פתרונות מימון יצירתיים | איחוד הלוואות אחראי | ליווי אישי לאורך כל הדרך  </div>
+<div className={styles.slogen} id="slogen">ייעוץ כל סוגי המשכנתאות ● פתרונות מימון יצירתיים ● איחוד הלוואות אחראי ● ליווי אישי לאורך כל הדרך  </div>
 <div className={styles.buttons}>
   <Button text ="לשיחת ייעוץ חינמית"/>
  

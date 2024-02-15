@@ -10,8 +10,8 @@ const SocialMedia=()=>{
 return<>
     <div className={styles.social}>זמינים עבורכם גם ב</div>
     <div className={styles.row}>
-    <a target="_blank" href='https://www.facebook.com/profile.php?id=61556046658791&mibextid=ZbWKwL'><img className={styles.image} src={facebook} alt ="פייסבוק ניר בן דוד"/></a>
-    <a target="_blank" href='https://www.instagram.com/_nir.ben.david_/'>  <img className={styles.image} src={instagram} alt ="אינסטגרם ניר בן דוד"/></a>
+    <a target="_blank" href='https://www.facebook.com/profile.php?id=61556046658791&mibextid=ZbWKwL' rel="noopener noreferrer"><img className={styles.image} src={facebook} alt ="פייסבוק ניר בן דוד"/></a>
+    <a target="_blank" href='https://www.instagram.com/_nir.ben.david_/' rel="noopener noreferrer">  <img className={styles.image} src={instagram} alt ="אינסטגרם ניר בן דוד"/></a>
     <a className={styles.a}  href={whatsappUrl}  target="_blank" rel="noopener noreferrer" > <img className={styles.image} src={whatsapp} alt ="ווצאפ ניר בן דוד"/></a>
   
     </div>

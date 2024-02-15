@@ -7,8 +7,8 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import PhoneIcon from '@mui/icons-material/Phone';
 import DescriptionIcon from '@mui/icons-material/Description';
-import ProcessIcon from '@mui/icons-material/Autorenew';
-import BoxesIcon from '@mui/icons-material/CheckBoxOutlineBlank';
+import EditIcon from '@mui/icons-material/Edit';
+import HandshakeIcon from '@mui/icons-material/Handshake';
 import Typography from '@mui/material/Typography';
 import ScrollReveal from 'scrollreveal';
 import GroupIcon from '@mui/icons-material/Group';
@@ -149,7 +149,7 @@ const CustomizedTimeline = () => {
             משא ומתן מול הבנקים 
             </Typography>
             <Typography fontFamily="RubikR" dir="rtl" fontSize="1rem" color="white" id="item3" textAlign="right" marginBottom="0">
-            לאחר שכבר חסכנו הרבה מאוד כסף בזכות בנייה נכונה של תמהיל משכנתא , אנחנו ב-X-Home עובדים באופן שוטף מול בנקאיים בכירים בכל 
+            לאחר שכבר חסכנו הרבה מאוד כסף בזכות בנייה נכונה של תמהיל משכנתא , אנחנו ב-Home-X עובדים באופן שוטף מול בנקאיים בכירים בכל 
 הבנקים ובשלב זה נדאג להשיג עבורכם את הריביות הטובות ביותר ! 
             </Typography>
           </TimelineContent>
@@ -167,7 +167,7 @@ const CustomizedTimeline = () => {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{ bgcolor: 'white' }} />
-            <DescriptionIcon fontSize="large" sx={{ color: '#ff5f1f' }} />
+            <EditIcon fontSize="large" sx={{ color: '#ff5f1f' }} />
             <TimelineConnector sx={{ bgcolor: 'white' }} />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '45px', px: 2, display: 'flex', flexDirection: 'column' }}>
@@ -192,7 +192,7 @@ const CustomizedTimeline = () => {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector sx={{ bgcolor: 'white' }} />
-            <GroupIcon fontSize="large" sx={{ color: '#ff5f1f' }} />
+            <HandshakeIcon fontSize="large" sx={{ color: '#ff5f1f' }} />
             <TimelineConnector sx={{ bgcolor: 'white' }} fontFamily="Rubik" />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '45px', px: 2, display: 'flex', flexDirection: 'column' }}>
@@ -200,7 +200,7 @@ const CustomizedTimeline = () => {
             הקשר רק התחיל 
             </Typography>
             <Typography fontFamily="RubikR" dir="rtl" fontSize="1rem" color="white" id="item3" textAlign="right" marginBottom="0">
-            אנחנו ב-X-Home מאמינים בשותפים לדרך, ולכן אנחנו מתחייבים להמשיך לתמוך ולהיות זמינים עבורכם בכל שאלה או בקשה
+            אנחנו ב-Home-X מאמינים בשותפים לדרך, ולכן אנחנו מתחייבים להמשיך לתמוך ולהיות זמינים עבורכם בכל שאלה או בקשה
             </Typography>
           </TimelineContent>
         </TimelineItem>
