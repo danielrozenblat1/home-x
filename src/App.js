@@ -9,9 +9,11 @@ import FifthScreen from "./screens/FifthScreen";
 import ByMe from "./screens/ByMe";
 import SocialMedia from "./screens/SocialMedia";
 import Reccomends from "./components/Reccomends";
+import DrawerAppBar from "./components/phoneNavBar/MuiNav";
 
 function App() {
   return<>
+ {/* <DrawerAppBar/> */}
   <FirstScreen/>
   <FifthScreen/>
   <ThirdScreen/>

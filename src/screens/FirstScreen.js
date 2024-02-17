@@ -7,6 +7,7 @@ import { useEffect,useRef } from "react"
 import ScrollReveal from "scrollreveal"
 import NavBar from "../components/NavBar"
 import Button from "../components/Button";
+import DrawerAppBar from "../components/phoneNavBar/MuiNav";
 const FirstScreen=()=>{
   const playerRef1=useRef(null)
   const handleComplete = () => {
@@ -63,6 +64,7 @@ const FirstScreen=()=>{
               });
     },[])
 return <>
+{/* {window.innerWidth<= 850 && <DrawerAppBar/>} */}
 {window.innerWidth>= 850 && <NavBar/>}
 <div className={styles.container}>
 

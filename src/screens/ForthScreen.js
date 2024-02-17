@@ -97,7 +97,7 @@ const CustomizedTimeline = () => {
               שיחת ייעוץ ואפיון
             </Typography>
             <Typography fontFamily="RubikR" dir="rtl" fontSize="1rem" color="white" id="item1" textAlign="right" marginBottom="0">
-            בשיחה זו נכיר אתכם ואת הנתונים הפיננסיים שלכם. תוך שקלול הנתונים נאפיין את סוגי העסאקות הרלוונטיות עבורכם ואת הפעולות הנדרשות 
+            בשיחה זו נכיר אתכם ואת הנתונים הפיננסיים שלכם. תוך שקלול הנתונים נאפיין את סוגי העסקאות הרלוונטיות עבורכם ואת הפעולות הנדרשות 
 להמשך התהליך
             </Typography>
           </TimelineContent>
@@ -149,7 +149,7 @@ const CustomizedTimeline = () => {
             משא ומתן מול הבנקים 
             </Typography>
             <Typography fontFamily="RubikR" dir="rtl" fontSize="1rem" color="white" id="item3" textAlign="right" marginBottom="0">
-            לאחר שכבר חסכנו הרבה מאוד כסף בזכות בנייה נכונה של תמהיל משכנתא , <br/>אנחנו ב Home-X עובדים באופן שוטף מול בנקאיים בכירים בכל 
+            לאחר שכבר חסכנו הרבה מאוד כסף בזכות בנייה נכונה של תמהיל המשכנתא , <br/>אנחנו ב Home-X עובדים באופן שוטף מול בנקאיים בכירים בכל 
 הבנקים ובשלב זה נדאג להשיג עבורכם את הריביות הטובות ביותר ! 
             </Typography>
           </TimelineContent>
