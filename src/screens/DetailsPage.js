@@ -8,7 +8,7 @@ const DetailsPage=()=>{
   const nameRef=useRef('')
     const phoneRef=useRef('')
     const emailRef=useRef('')
-     const reciver="nirbd94@gmail.com" 
+     const reciver="Nir@homex24.onmicrosoft.com" 
 
 
 
